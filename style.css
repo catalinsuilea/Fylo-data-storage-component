@@ -1,0 +1,137 @@
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    background-color:hsl(229, 57%, 11%);
+}
+.container {
+    display:flex;
+    justify-content:center; 
+}
+.first-box {
+    background-color:  hsl(228, 56%, 26%);
+    width:40%;
+    border-radius:10px; 
+    border-top-right-radius: 100px;
+}
+.first-box-content {
+    padding:10%;
+}
+.files img {
+  margin:35px 25px 0 0;
+  background-color:hsl(229, 57%, 11%);
+  padding:15px;
+  border-radius:10px;  
+}
+.second-box {
+    background-color:  hsl(228, 56%, 26%);
+    width:60%;
+    height:200px;
+    color:white;
+    border-radius:10px;
+    margin-top:60px;
+    margin-left:30px;
+    
+}
+.second-box-content {
+      padding:5% 5% 0 5%;
+      margin-top:25px;
+       
+}
+h1 {
+    font-size:20px;
+    letter-spacing:1px;
+    margin-bottom:30px;
+}
+.bar{
+    background-color: hsl(229, 57%, 11%);
+    width:50%;
+    border-radius :50px;
+    width:100%;
+    height:20px;
+    position:relative;
+}
+.bar::before{
+    content: '';
+  position: absolute;
+  left:1px;
+  width:80%;
+  height:15px;
+  top:2.5px;
+  border-radius:10px;
+  background-image:linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+
+}
+.storage-info {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.bar::after{
+    content: '';
+    position: absolute;
+    width:15px;
+    border-radius:50%;
+    background-color:white;
+    height:15px;
+    top:2.5px;
+    right:20%;
+}
+h2,h3{
+    font-size:17px;
+    margin-top:12px;
+}
+.bg-bottom{
+    background-color:white;
+   border:1px solid white;
+}
+.storage-left {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:white;
+    float:right;
+    width:30%;
+    
+    margin:0 auto;
+    color:black;
+    position:relative;
+    top:-65px;
+    right:20px;
+    padding:2% 5%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 75%, 100% 100%, 89% 76%, 0% 75%);
+    border-radius:10px;
+    
+}
+.storage-left span {
+    font-size:35px;
+    margin-right:15px;
+}
+.storage-left small {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:12px;
+}
+@media(max-width:850px) {
+    .container {
+        flex-direction: column;
+        justify-content:center;
+    }
+    .first-box,.second-box{
+        width:90%;
+        margin:20px auto;
+    }
+    .first-box-content {
+        text-align:left;
+    }
+    .second-box-content{
+        text-align: center;
+        padding:20px;
+      
+    }
+    h1 {
+      font-size:15px;
+    }
+  
+}
